@@ -23,4 +23,4 @@ weight: 1
 
 金門縣山坡地界址圖
 
-![金門縣山坡地範圍](../images/mountain.jpg)
+![金門縣山坡地範圍](images/mountain.jpg)
