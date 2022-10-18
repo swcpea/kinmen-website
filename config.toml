@@ -6,7 +6,7 @@ disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
 defaultContentLanguage = "en"
 
 # The name of this wonderful theme ;-).
-theme = [""]
+# theme = ""
 
 # The "title" of your website
 title = "金門縣水土保持技師服務團 - 為金門縣水土保持盡一份心"
