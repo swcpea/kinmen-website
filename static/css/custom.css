@@ -87,7 +87,7 @@ timeline
     margin-top: 10px;
     position: relative;
     /* background-color: gray; */
-    width: 90%;
+    width: auto;
     left: 10%;
   }
   /* The circles on the timeline */
@@ -141,7 +141,7 @@ timeline
   
   /* card title format */
   .timeline .content .title {
-    padding: 5px 30px;
+    padding: 5px 20px;
     font-weight: bold;
     display: inline-block;
   }
@@ -158,21 +158,15 @@ timeline
   
   /* body size */
   .timeline .content .body {
-    padding: 5px 30px;
+    padding: 5px 20px;
   }
   
   /* responsive for small devices*/
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     .timeline .container {
+      width:auto
       padding: 10px 10px 0px 40px;
       left: 5%;
-      width: 95%;
-    }
-    .timeline .container .date {
-      font-size: small;
-      transform: rotate(-90deg);
-      left: -5%;
-      top: 30px;
     }
     .timeline .container::after {
       left: 3px;
@@ -183,21 +177,4 @@ timeline
     .timeline .content .moment {
       position: relative;
     }
-  }
-
-  .service{
-    width: 800px;
-    margin: 50px auto;
-    border:solid 1px gray;
-    overflow: hidden; /* 避免長方框下面顯示不正常 */
-  }
-    .serviceimg{
-    float:left; /* 圖片在左邊 */
-    display: block;
-    width:100%;
-    padding: 20px;
-  }
-  .servicetext{
-    float: right;  /* 文字在右邊 */
-    padding: 20px 20px 0px 0px;
   }
