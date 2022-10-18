@@ -1,0 +1,203 @@
+    /* Links */
+     h1.blog-title {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 900;
+          text-shadow: -1px -1px 0 #3A4145,
+              1px -1px 0 #3A4145,
+              -1px 1px 0 #3A4145,
+              1px 1px 0 #3A4145;
+     }
+     h2.blog-description {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 700;  
+        text-stroke: -1px -1px 0 #3A4145,
+              1px -1px 0 #3A4145,
+              -1px 1px 0 #3A4145,
+              1px 1px 0 #3A4145;
+          }
+     a:hover {
+         color: #b6b84c;
+     }
+
+     /* Header Buttons on Startpage */
+     a.btn {
+         color: white;
+          background-color: #ced067;
+          font-family: 'Noto Sans TC', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+     }
+     a.btn:hover {
+          background-color: #b6b84c;
+     }
+
+     /* Scroll Menu on Startpage */
+     a.fn-item.active {
+          color: #b6b84c;
+     }
+     a.fn-item:hover {
+          color: #ced067;
+     }
+
+     /* Content / Sections */
+     .post-holder.odd {
+          background: #e2f5c9;
+          color:#3A4145
+     }
+     .post-holder {
+          background: #f2efe8;
+     }
+     body {
+          color: #3A4145;
+          font-family: 'Noto Sans TC', sans-serif;
+          }
+     }
+
+     /* Footer */
+     .site-footer {
+          color: #BBC7CC;
+          background-color: #22343A;
+     }
+
+/************************************
+timeline
+************************************/
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #444;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline .container {
+    padding: 10px 10px 10px 40px;
+    margin-top: 10px;
+    position: relative;
+    /* background-color: gray; */
+    width: 90%;
+    left: 10%;
+  }
+  /* The circles on the timeline */
+  .timeline .container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -12px;
+    background-color: rgb(159, 229, 149);
+    border: 4px solid #444;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  /* date display */
+  .timeline .container .date {
+    position: absolute;
+    top: 22px;
+    z-index: 1;
+    left: -10%;
+    font-size: large;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .timeline .container::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 30px;
+    width: 0;
+    z-index: 1;
+    left: 26px;
+    border: medium solid rgb(159, 229, 149);
+    border-width: 13px 13px 13px 0px;
+    border-color: rgb(159, 229, 149) rgb(159, 229, 149) transparent transparent;
+  }
+  /* The actual content */
+  .timeline .content {
+    box-shadow: 0 0 3px 3px rgb(159, 229, 149);;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    transition: box-shadow 0.3s;
+  }
+  
+  /* small shadow change on hover*/
+  .timeline .content:hover {
+    box-shadow: 0 0 3px 4px rgb(159, 229, 149);;
+  }
+  
+  /* card title format */
+  .timeline .content .title {
+    padding: 5px 30px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  /* time moment format*/
+  .timeline .content .moment {
+    color: #c41a16;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+  }
+  
+  /* body size */
+  .timeline .content .body {
+    padding: 5px 30px;
+  }
+  
+  /* responsive for small devices*/
+  @media screen and (max-width: 600px) {
+    .timeline .container {
+      padding: 10px 10px 0px 40px;
+      left: 5%;
+      width: 95%;
+    }
+    .timeline .container .date {
+      font-size: small;
+      transform: rotate(-90deg);
+      left: -5%;
+      top: 30px;
+    }
+    .timeline .container::after {
+      left: 3px;
+    }
+    .timeline .content .body {
+      padding: 5px 5px;
+    }
+    .timeline .content .moment {
+      position: relative;
+    }
+  }
+
+  .service{
+    width: 800px;
+    margin: 50px auto;
+    border:solid 1px gray;
+    overflow: hidden; /* 避免長方框下面顯示不正常 */
+  }
+    .serviceimg{
+    float:left; /* 圖片在左邊 */
+    display: block;
+    width:100%;
+    padding: 20px;
+  }
+  .servicetext{
+    float: right;  /* 文字在右邊 */
+    padding: 20px 20px 0px 0px;
+  }
