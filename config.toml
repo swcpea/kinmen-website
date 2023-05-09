@@ -35,7 +35,7 @@ title = "金門縣水土保持技師服務團 - 為金門縣水土保持盡一�
 
     # This theme will, by default, inject a design-by-line at the bottom of the page.
     # You can turn it off, but we would really appreciate if you don’t :-)
-    # hidedesignbyline = true
+    hidedesignbyline = true
 
     [params.meta]
         keywords = "水土保持, 水保, 金門, 服務團, 水土保持技師"
