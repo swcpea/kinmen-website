@@ -1,26 +1,20 @@
-{{ if isset .Site.Data "clients" }}
 {{ if gt (len .Site.Data.clients) 0 }}
 <section class="bar background-gray no-mb">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="owl-carousel customers">
-                    {{ range .Site.Data.clients }}
-                    <li class="item" title="{{ .name }}">
-                        {{ if .url }}
-                          <a href="{{ .url }}" target="_blank">
-                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                          </a>
-                        {{ else }}
-                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                        {{ end }}
-                    </li>
-                    {{ end }}
-                </ul>
+        <div class="item">
+            {{ range .Site.Data.clients }}
+              {{ if .url }}
+                <a href="{{ .url }}" target="_blank">
+                <img src="{{ .image }}" alt="{{ .name }}" />
+                </a>
+              {{ else }}
+                <img src="{{ .image }}" alt="{{ .name }}" />
+              {{ end }}
+              <div class="description" style="text-align:center">{{ .descr }}</div>
+              <br>
+            {{ end }}
                 <!-- /.owl-carousel -->
-            </div>
-        </div>
+        </div>  
     </div>
 </section>
-{{ end }}
 {{ end }}

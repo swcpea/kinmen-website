@@ -6,7 +6,7 @@ disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
 defaultContentLanguage = "en"
 
 # The name of this wonderful theme ;-).
-# theme = ""
+theme = "hugo-scroll"
 
 # The "title" of your website
 title = "金門縣水土保持技師服務團 - 為金門縣水土保持盡一份心"
@@ -38,4 +38,4 @@ title = "金門縣水土保持技師服務團 - 為金門縣水土保持盡一�
     # hidedesignbyline = true
 
     [params.meta]
-        keywords = "some, keywords, for, seo, you, know, google, duckduckgo, and, such"
+        keywords = "水土保持, 水保, 金門, 服務團, 水土保持技師"
