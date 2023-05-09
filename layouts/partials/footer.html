@@ -1,8 +1,9 @@
 <footer class="site-footer">
   <div class="inner">
     {{ with .Site.Params.copyright }}
-      <section class="copyright">{{ . | markdownify }}</section>{{ end }}
-
+      <section class="copyright">{{ . | markdownify }}&nbsp;&nbsp;<i class="fa fa-facebook"></i><a href="https://www.facebook.com/swcpea/" target="_blank" title="facebook">水土保持技師公會粉絲專頁</a></section>{{ end }}
+      <i class="fa fa-envelope"></i><a href="mailto:tpswcpea@seed.net.tw" title="email">tpswcpea@seed.net.tw</a>&nbsp;&nbsp;
+      <i class="fa fa-phone"></i><a href="tel:0282581918" title="phone">02-82581918</a>
 
     <section>{{ echoParam .Site.Params "hidebyline" }}</section>
     {{ if ne .Site.Params.hidedesignbyline true }}

@@ -12,6 +12,10 @@ table a.btn{
   margin: 0 auto;
 }
 
+.description{
+  margin-top: 10px;
+}
+
 
     /* Links */
      h1.blog-title {
@@ -32,18 +36,6 @@ table a.btn{
           }
      a:hover {
          color: #b6b84c;
-     }
-
-     /* Header Buttons on Startpage */
-     a.btn {
-         color: white;
-          background-color: #ced067;
-          font-family: 'Noto Sans TC', sans-serif;
-          font-weight: 500;
-          font-size: 18px;
-     }
-     a.btn:hover {
-          background-color: #b6b84c;
      }
 
      /* Scroll Menu on Startpage */
