@@ -3,12 +3,6 @@ title: "立即預約"
 weight: 4
 header_menu: true
 ---
-{{< calendly calendar="kinmengroup/30min" type="inlineEmbed" />}}
+歡迎預約本水土保持服務團諮詢服務，必要時技師會親自前往坡地現場輔導，完全免費，請有需要的民眾多加利用。
 
-{{<icon class="fa fa-envelope">}}&nbsp;[tpswcpea@seed.net.tw](mailto:tpswcpea@seed.net.tw)
-
-{{<icon class="fa fa-phone">}}&nbsp;[02-82581918](tel:0282581918)
-
-歡迎來電或來信聯絡!
-
-
+{{< contact >}}

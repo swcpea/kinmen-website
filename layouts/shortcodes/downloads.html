@@ -1,0 +1,18 @@
+{{ if gt (len .Site.Data.downloads) 0 }}
+<table cellpadding="10">
+  {{ range .Site.Data.downloads }}
+  <tr>
+    {{ if .title }}
+    <td>
+      {{ .title }}
+    </td>
+    {{ end }}
+    {{ if .url }}
+    <td>
+      <a href="{{ .url }}" target="_blank" rel="noreferrer" class="btn" >前往</a>
+    </td>
+    {{ end }}
+  </tr>
+  {{ end }}
+</table>
+{{ end }}

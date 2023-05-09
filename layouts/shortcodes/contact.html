@@ -1,0 +1,55 @@
+<div class="form">
+    <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/xyyvpyqv" method="post">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">申請人</label>
+        <input type="text" name="name" id="full-name" placeholder="您的姓名" required="">
+        <label for="mobile">電話</label>
+        <input type="text" name="mobile" id="mobile-no" placeholder="您的電話" required="" maxlength="10">
+        <label for="email-address">電子郵件地址</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="您的電子信箱地址" required="">
+        <label for="street-address">住址</label>
+        <input type="text" name="stree_address" id="street-address" placeholder="您的住址" required="">
+        <fieldset class="locale">
+          <legend>申請地號</legend>
+          <select name="district">
+            <option value="" selected="" disabled="">行政區</option>
+              <option value="金城鎮">金城鎮</option>
+              <option value="金湖鎮">金湖鎮</option>
+              <option value="金沙鎮">金沙鎮</option>
+              <option value="金寧鄉">金寧鄉</option>
+              <option value="烈嶼鄉">烈嶼鄉</option>
+              <option value="烏坵鄉">烏坵鄉</option>
+          </select>
+          <input type="text" name="section" placeholder="地段">
+          <input type="text" name="section_small" placeholder="小段">
+          <input type="text" name="field_number" placeholder="地號">
+        </fieldset>
+        <fieldset class="project">
+          <legend>申請項目</legend>
+            <div class="checkbox-custom">
+              <label><input type="checkbox" name="project[]" id="project1" value="水土保持申請程序諮詢">水土保持申請程序諮詢</labe;>
+            </div>
+            <div class="checkbox-custom">
+              <label><input type="checkbox" name="project[]"  id="project2" value="山坡地農地水土保持處理維護指導">山坡地農地水土保持處理維護指導</label>
+            </div>
+            <div class="checkbox-custom">
+              <label><input type="checkbox" name="project[]"  id="project3" value="水土保持違規案件改正輔導">水土保持違規案件改正輔導</label>
+            </div>
+            <div class="checkbox-custom">
+              <label><input type="checkbox" name="project[]"  id="project4" value="資材室簡易水土保持申報書填寫指導">資材室簡易水土保持申報書填寫指導</label>
+            </div>
+            <div class="checkbox-custom">
+              <label><input type="checkbox" name="project[]" id="project5" value="水土保持處理技術輔導">水土保持處理技術輔導</label>
+            </div>
+            <div class="col-md-2">
+              <div class="checkbox-custom row">
+                <label><input type="checkbox" name="project[]" id="project6" onclick="if(this.checked){ document.getElementById('othersproj').disabled = false; document.getElementById('othersproj').focus();}else{document.getElementById('othersproj').disabled = true;}" value="6">其他</label>
+                <input type="text" name="othersproj"  placeholder="" id="othersproj" disabled="disabled">
+              </div>
+            </div>
+        </fieldset>
+        <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+      </fieldset>
+      <input type="submit" value="送出預約">
+    </form>
+    </div>
