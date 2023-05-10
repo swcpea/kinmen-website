@@ -2,6 +2,13 @@ table a.btn{
   margin-top: 0;
 }
 
+table a.btn{
+  margin-top: 0;
+  border: 0.5px solid;
+}
+
+
+
 .item img{
   display: block;
   width: 100%;
