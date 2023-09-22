@@ -1,6 +1,6 @@
-baseURL = "https://example.com/"
+baseURL = "https://kinmen-swcg.netlify.app/"
 languageCode = "en"
-title = "Initio - Free, multipurpose html5 template by GetTemplate"
+title = "金門縣水土保持服務團 - 為金門縣水土保持盡一份心"
 theme = "hugo-initio"
 
 [params]
@@ -44,3 +44,6 @@ theme = "hugo-initio"
     footer = true
     sharethis = true
     network = "email"
+
+[params.meta]
+    keywords = "水土保持, 水保, 金門, 服務團, 水土保持技師"
