@@ -1,41 +1,46 @@
-baseURL = "https://kinmen-swcg.netlify.app/"
-
-# This is a "one page"-website, so we do not need these kinds of pages...
-disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
-
-defaultContentLanguage = "en"
-
-# The name of this wonderful theme ;-).
-theme = "hugo-scroll"
-
-# The "title" of your website
-title = "金門縣水土保持技師服務團 - 為金門縣水土保持盡一份心"
+baseURL = "https://example.com/"
+languageCode = "en"
+title = "Initio - Free, multipurpose html5 template by GetTemplate"
+theme = "hugo-initio"
 
 [params]
-    # A "copyright"-line to be added at the bottom of the page.
-    # Hint: Markdown is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© 臺北市水土保持技師公會"
+    phone = "02-82581918"
+    address = "22043 新北市板橋區雙十路2段143號4樓"
+    year = 2023
+    avatar = "images/guy.jpg"
+    avatarclass = "circle"
+    background = ""
+    banner = "images/banner.png"
+    favicon = "images/favicon.ico"
+    DateForm = "January 2, 2006"
+    author = "Sergey Pozhilov (GetTemplate.com)"
 
-    # The "description" of your website. This is used in the meta data of your generated html.
-    description = "金門縣水土保持技師服務團"
+    showSubheader = true
+    showServices = true
+    showRecentWorks = true
+    showDownloads = true
+    showClients = true
 
-    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-    favicon = "images/favicon.png"
+    showFooterContact = true
+    showFooterFollowMe = true
+    showFooterTextWidget = false
+    showFooterFormWidget = false
 
-    # These "images" are used for the structured data templates. This will show up, when
-    # services like Twitter or Slack want to generate a preview of a link to your site.
-    # See https://gohugo.io/templates/internal#twitter-cards and
-    # https://gohugo.io/templates/internal#open-graph.
-    images = ["images/bighead.jpg"]
+[params.google.analytics]
+    trackerID = "G-TSZDRRZVWX"
 
-    # Another "title" :-). This one is used as the site_name on the Hugo's internal
-    # opengraph structured data template.
-    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "金門縣水土保持技師服務團 - 為金門縣水土保持盡一份心"
+[[params.social]]
+	title = "facebook"
+	url = "https://www.facebook.com/swcpea/"
+    icon = "fab fa-facebook-square"
+    footer = true
+    sharethis = true
+    network = "facebook"
 
-    # This theme will, by default, inject a design-by-line at the bottom of the page.
-    # You can turn it off, but we would really appreciate if you don’t :-)
-    hidedesignbyline = true
-
-    [params.meta]
-        keywords = "水土保持, 水保, 金門, 服務團, 水土保持技師"
+[[params.social]]
+	title = "email"
+	url = "mailto:tpswcpea@seed.net.tw"
+    icon = "fas fa-envelope-square"
+    footer = true
+    sharethis = true
+    network = "email"
