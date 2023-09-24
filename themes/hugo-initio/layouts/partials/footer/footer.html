@@ -31,15 +31,7 @@
 			</div>
 			{{ end }}
 			<div class="col-md-3 widget">
-				<div class="viewstats">瀏覽人數: <div id="stats"></div></div>
-				<script>
-					var r = new XMLHttpRequest();
-					r.addEventListener('load', function() {
-						document.querySelector('#stats').innerText = JSON.parse(this.responseText).count_unique + "人"
-					})
-					r.open('GET', 'https://kinmenswcg.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
-					r.send()
-				</script>
+				<div class="viewstats">瀏覽人數: <span id="busuanzi_value_site_pv"></span>次</div>
 			</div>
 
 			{{ if .Site.Params.showFooterTextWidget }}
