@@ -1,3 +1,13 @@
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSZDRRZVWX"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+		gtag('config', 'G-TSZDRRZVWX');
+	</script>
+
 	<title>{{ .Title }}</title>
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
 
@@ -11,10 +21,13 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	
 	{{ $styles := resources.Get "css/styles.css" }}
-  {{ $css := $styles | resources.Minify | resources.Fingerprint "sha512"  }}
-  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  	{{ $css := $styles | resources.Minify | resources.Fingerprint "sha512"  }}
+  	<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
 
   <!-- Share this --> 
   {{ if .Site.Params.customsharethis }}
 	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
 	{{ end }}
+
+	<script data-goatcounter="https://MYCODE.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

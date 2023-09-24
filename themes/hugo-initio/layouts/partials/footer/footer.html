@@ -30,13 +30,17 @@
 				</div>
 			</div>
 			{{ end }}
-
-			<script>
-				// Append to the <body>; can use a CSS selector to append somewhere else.
-				window.goatcounter.visit_count({append: 'body'})
-			</script>
-			<script data-goatcounter="https://kinmenswcg.goatcounter.com/count"
-					async src="//gc.zgo.at/count.js"></script>
+			<div class="col-md-3 widget">
+				<div class="viewstats">瀏覽人數: <div id="stats"></div></div>
+				<script>
+					var r = new XMLHttpRequest();
+					r.addEventListener('load', function() {
+						document.querySelector('#stats').innerText = JSON.parse(this.responseText).count_unique + "人"
+					})
+					r.open('GET', 'https://kinmenswcg.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
+					r.send()
+				</script>
+			</div>
 
 			{{ if .Site.Params.showFooterTextWidget }}
 			<div class="col-md-3 widget">

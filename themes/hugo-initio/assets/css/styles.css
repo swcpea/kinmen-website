@@ -6,6 +6,7 @@ body {
   font-size: 0.9375rem;
   font-family: "Open sans", Helvetica, Arial, sans-serif;
   color: #666666;
+  background-color: #fffff5;
   padding: 0;
 }
 .topspace {
@@ -194,7 +195,7 @@ a:hover {
   color: #e93675;
 }
 .lead {
-  font-weight: 300;
+  font-weight: 800;
   font-size: 30px;
   text-align: left;
 }
@@ -220,10 +221,16 @@ a:hover {
 
 
 **********************************************************************/
+#header {
+  margin:10px;
+}
+
+/*
+
 #head {
   background-color: #f4f4f4;
   background-position: top center;
-  background-size: cover;
+  object-fit: scale-down;
   color: #7C7C7C;
   padding: 30px 0 35px 0;
 }
@@ -284,6 +291,9 @@ a:hover {
   font-size: 1rem;
   margin: 15px 0 0;
 }
+
+*/
+
 /*********************************************************************
 
 
@@ -787,7 +797,9 @@ footer.entry-meta .meta-in {
 #footer a:hover {
   color: #fff;
 }
-#footer h3.widget-title {
+#footer h3.widget-title,
+#footer .viewstats {
+
   font-size: 15px;
   font-size: 0.9375rem;
   text-transform: uppercase;
@@ -839,6 +851,7 @@ footer.entry-meta .meta-in {
 
 
 **********************************************************************/
+/*
 .st-custom-button[data-network] {
    background-color: #fff;
    display: inline-block;
@@ -850,6 +863,7 @@ footer.entry-meta .meta-in {
       color: #004488;
    }
 }
+*/
 
 /*********************************************************************
 
@@ -858,16 +872,21 @@ footer.entry-meta .meta-in {
 
 
 **********************************************************************/
+#fs-frm fieldset#fs-frm-inputs {
+  padding-left: 30px;
+}
+
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm fieldset,
 #fs-frm optgroup,
 #fs-frm label,
+#fs-frm legend,
 #fs-frm #card-element:disabled {
-  font-family: inherit;
-  font-size: 100%;
-  color: inherit;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  color: #333333;
   border: none;
   border-radius: 0;
   display: inline;
@@ -878,12 +897,12 @@ footer.entry-meta .meta-in {
   -moz-appearance: none;
 }
 #fs-frm label,
-#fs-frm legend,
-#fs-frm ::placeholder {
+#fs-frm legend {
   font-size: 22px;
   margin-bottom: .5rem;
   padding-top: .2rem;
   display: flex;
+  font-weight:bold;
   align-items: baseline;
 }
 
@@ -920,6 +939,8 @@ footer.entry-meta .meta-in {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
+  color: white;
+  font-size: 24px;
 }
 #fs-frm [type="button"]:focus,
 #fs-frm [type="submit"]:focus,
@@ -931,17 +952,32 @@ footer.entry-meta .meta-in {
   margin: 5px;
 }
 
+#fs-frm [type="submit"] {
+  background-color: #b18169;
+}
+
 #fs-frm [type="submit"]:hover {
-  background-color: #5E5E5E;
+  background-color: #dbaf99;
+}
+
+#fs-frm [type="reset"] {
+  background-color: #999;
+}
+
+#fs-frm [type="reset"]:hover {
+  background-color: #a5a3a3;
 }
 
 #fs-frm div.form_button {
+  padding-left: 30px;
   display: flex;
   justify-content : center;
 }
 
 #fs-frm select {
   text-transform: none;
+  font-size: 20px;
+  padding: 2.2px 8px;
 }
 
 #fs-frm [type="checkbox"] {
@@ -964,12 +1000,11 @@ footer.entry-meta .meta-in {
 
 /* address, locale */
 
-#fs-frm fieldset.locale select[name="district"],
 #fs-frm fieldset.locale input[name="section"],
 #fs-frm fieldset.locale input[name="section_small"],
 #fs-frm fieldset.locale input[name="field_number"] {
   display: inline;
-  font-size: 22px;
+  font-size: 20px;
 }
 #fs-frm fieldset.locale input[name="section"],
 #fs-frm fieldset.locale input[name="section_small"] {
@@ -980,11 +1015,10 @@ footer.entry-meta .meta-in {
   width: 35%;
 }
 
-#fs-frm .checkbox-custom label,
-#fs-frm .checkbox-custom.row label {
-  font-size: auto;
-  font-family: 'Noto Sans TC', sans-serif;
-  line-height: 1.8rem;
+#fs-frm .checkbox-custom label {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
   display: flex;
@@ -992,16 +1026,71 @@ footer.entry-meta .meta-in {
   align-items: baseline;
 }
 
-#fs-frm .checkbox-custom {
-  line-height: 1.2rem;
+#fs-frm ::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  width: 100%;
+  align-items: baseline;
 }
 
+#fs-frm .checkbox-custom-row, #fs-frm .checkbox-custom-row label, #project6, #othersproj {
+  display: inline !important;
+}
+
+#fs-frm .checkbox-custom-row label, input#othersproj {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+
 #fs-frm input[disabled] {
-  background-color: #CCCCCC;
+  background-color: #e4e4e4;
 }
 
 /* Style the container */
 .form {
   border-radius: 5px;
   padding-right: 20px;
+}
+
+
+/*********************************************************************
+
+
+                                RWD 
+
+
+**********************************************************************/
+
+@media only screen and (max-width: 500px) {
+  #header {
+    margin:2px 0px 0px;
+  }
+
+  .topspace {
+    margin-top: 15px;
+  }
+
+  .lead {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .panel-cta p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+  }
+  .row {
+    margin-right: -7px;
+  }
+  input#othersproj {
+    max-width: 70%;
+  }
 }

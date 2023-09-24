@@ -2,13 +2,13 @@
     <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/xyyvpyqv" method="post">
       <fieldset id="fs-frm-inputs">
         <label for="full-name">申請人</label>
-        <input type="text" name="name" id="full-name" placeholder="您的姓名" required="">
-        <label for="mobile">電話</label>
-        <input type="text" name="mobile" id="mobile-no" placeholder="您的電話" required="" maxlength="10">
+        <input type="text" name="name" id="full-name" placeholder="您的姓名" required="" autocomplete="name">
+        <label for="mobile-no">電話</label>
+        <input type="text" name="mobile" id="mobile-no" placeholder="您的電話" required="" maxlength="10" autocomplete="tel">
         <label for="email-address">電子郵件地址</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="您的電子信箱地址" required="">
+        <input type="email" name="_replyto" id="email-address" placeholder="您的電子信箱地址" required="" autocomplete="email">
         <label for="street-address">住址</label>
-        <input type="text" name="stree_address" id="street-address" placeholder="您的住址" required="">
+        <input type="text" name="stree_address" id="street-address" placeholder="您的住址" required="" autocomplete="street-address">
         <fieldset class="locale">
           <legend>申請地號</legend>
           <select name="district">
@@ -41,11 +41,9 @@
             <div class="checkbox-custom">
               <label><input type="checkbox" name="project[]" id="project5" value="水土保持處理技術輔導">水土保持處理技術輔導</label>
             </div>
-            <div class="col-md-2">
-              <div class="checkbox-custom row">
-                <label><input type="checkbox" name="project[]" id="project6" onclick="if(this.checked){ document.getElementById('othersproj').disabled = false; document.getElementById('othersproj').focus();}else{document.getElementById('othersproj').disabled = true;}" value="6">其他</label>
-                <input type="text" name="othersproj"  placeholder="" id="othersproj" disabled="disabled">
-              </div>
+            <div class="checkbox-custom-row">
+              <label id="project6label"><input type="checkbox" name="project[]" id="project6" onclick="if(this.checked){ document.getElementById('othersproj').disabled = false; document.getElementById('othersproj').focus();}else{document.getElementById('othersproj').disabled = true;}" value="6">其他</label>
+              <input type="text" name="othersproj"  placeholder="" id="othersproj" disabled="disabled">
             </div>
         </fieldset>
         <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
