@@ -1,6 +1,6 @@
 ---
 title: "點擊開啟"
-file: "https://www.swcb.gov.tw/Home/Laws/laws_more?id=797fcb9d6be0462f9a2d545addda59cb"
-weight: 3
+file: "https://ead.kinmen.gov.tw/News_Content.aspx?n=0F14F7A22826FA06&sms=A2C62D68901B977C&s=389F2D18B6D57241"
+weight: 2
 ---
-水土保持計畫審核監督辦法(含所需書、表、文件之格式)	
+公告金門縣山坡地範圍界址圖
